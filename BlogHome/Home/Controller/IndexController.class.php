@@ -6,4 +6,9 @@ class IndexController extends BaseHomeController {
     public function index(){
         SE();
     }
+
+    public function test()
+    {
+        
+    }
 }
