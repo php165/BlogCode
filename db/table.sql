@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS `BlogCode_Test`;
+CREATE TABLE IF NOT EXISTS `BlogCode_Test` (
+    `id` INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `username` VARCHAR(32) NOT NULL,
+    `password` VARCHAR(32) NOT NULL
+);

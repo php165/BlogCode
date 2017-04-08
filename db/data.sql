@@ -1,0 +1,1 @@
+INSERT INTO `BlogCode_Test`(`id`,`username`,`password`) VALUES(1,'a1','1234');
