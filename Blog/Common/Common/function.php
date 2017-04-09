@@ -11,6 +11,7 @@
         return "mysql://root:@localhost/blogcode";
     }
 
+    //自定义模型类  以后还要改
     function ND($name='',$layer='', $tablePrefix='', $connection='') {
         if(empty($name)) return new Think\Model;
         static $_model  =   array();

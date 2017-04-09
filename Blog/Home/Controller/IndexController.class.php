@@ -10,12 +10,6 @@ class IndexController extends BaseController {
     }
 
     public function index() {
-        if(IS_POST) {
-            $data['username'] = I('post.username');
-            $data['password'] = I('post.password');
-            $this -> ajaxReturn(ND('Index') -> test($data));
-        }else {
-            $this -> display('index');
-        }
+        $this -> display('index');
     }
 }
