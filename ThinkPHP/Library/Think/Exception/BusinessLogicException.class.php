@@ -1,7 +1,6 @@
 <?php  
 namespace Think\Exception;
 
-class BusinessLogicException extends \Exception
-{
+class BusinessLogicException extends \Exception {
     
 }
