@@ -27,7 +27,7 @@ class LoginController extends Controller {
       $res = $Verify->check($_POST['code']);
       if($res){
       	//验证账号
-      	$mod = M("user");
+      	$mod = ND("user");
       	$user = $mod -> where('user="'.$_POST['user'].'"')->find();
       	// dump($user);exit;
       	if($user){
