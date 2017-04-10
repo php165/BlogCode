@@ -1,30 +1,142 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html lang="en">
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <script type="text/javascript" src="/BlogCode/www/Public/Js/jquery.min.js"></script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="description" content="" />
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<title>标题</title>
+<!-- BOOTSTRAP CORE STYLE -->
+<link href="/BlogCode/www/Public/Css/bootstrap.css" rel="stylesheet" />
+<!-- FONT AWESOME ICON STYLE -->
+<link href="/BlogCode/www/Public/Css/font-awesome.css" rel="stylesheet" />
+<!-- CUSTOM STYLE CSS -->
+<link href="/BlogCode/www/Public/Css/style_home_index.css" rel="stylesheet" />
+<script src="/BlogCode/www/Public/Js/jquery.min.js"></script>
+<script src="/BlogCode/www/Public/Js/bootstrap.js"></script>
 </head>
 <body>
-    账号:<input id="username" type="text" value=""/>
-    <br/>
-    密码:<input id="password" type="password" value=""/>
-    <br/>
-    <a id="tijiao" href="javascript:void(0)">提交</a>
+    <div id="header">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 logo-div">
+                        <div class="logo-inner text-center">
+                            <div class="logo-name">
+                                <a href="index.html">
+                                    <img src="/BlogCode/www/Public/Image/me.jpg" class="img-circle" />
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-8 header-text-top " id="about">
+                        <h1>Nice responsive template for blogger.</h1>
+						This blogging template use bootstrap and html to create a very nice blogging page with great responsive. <br /> 
+						Here you can write a general notes about your blog.<br />
+						<h2><strong>Who I am ? </strong></h2>
+                        <i>I am Jhon Deo </i>	
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END HEADER SECTION-->
+    <div class="info-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <!-- 菜单栏   后期还要改 -->
+                    <a href="" style="margin:15px">PHP</a>
+                    <a href="" style="margin:15px">Python</a>
+                    <a href="" style="margin:15px">个人简历</a>
+                </div>
+                <div class="col-md-2">
+                    <div class="social-link">
+                        <a href="#" class="btn btn-default btn-xs"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="#" class="btn btn-default btn-xs"><i class="fa fa-linkedin fa-2x"></i></a>
+                        <a href="#" class="btn btn-default btn-xs"><i class="fa fa-google-plus fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+    <!--END INFO SECTION-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 ">
+                <div class="blog-post">
+                    <h2>文章标题</h2>
+                    <h4>发表时间</h4>
+                    <p>
+                        内容摘要
+                    </p>
+                    <a href="#" class="btn btn-default btn-lg ">Read More <i class="fa fa-angle-right"></i></a>
+                </div>
+                <div class="blog-post">
+                    <h2><a href="">文章标题</a></h2>
+                    <h4>发表时间</h4>
+                    <p>
+                        内容摘要
+                    </p>
+                </div>
+                <br />
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3" style="padding-top: 30px;">
+				<div class="row">
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>最新发表</strong></li>
+                    <li class="list-group-item"><a href="">Dapibus ac facilisis in</a></li>
+                    <li class="list-group-item"><a href="">Dapibus ac facilisis in</a></li>
+                    <li class="list-group-item"><a href="">Dapibus ac facilisis in</a></li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>热门文章</strong></li>
+                    <li class="list-group-item"><a href="">Dapibus ac facilisis in</a></li>
+                    <li class="list-group-item"><a href="">Dapibus ac facilisis in</a></li>
+                    <li class="list-group-item"><a href="">Dapibus ac facilisis in</a></li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>最新评论</strong></li>
+                    <li class="list-group-item"><a href="">Dapibus ac facilisis in</a></li>
+                    <li class="list-group-item"><a href="">Dapibus ac facilisis in</a></li>
+                    <li class="list-group-item"><a href="">Dapibus ac facilisis in</a></li>
+                </ul>
+				</div>
+				<div class="row">
+				<h3>Advertising</h3>
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-sec" style="margin-top: 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 foo-inner">
+                    &copy; 2015 Yourdomain.com | More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-<script type="text/javascript">
-    $("#tijiao").click(function(){
-        var username = $("#username").val();
-        var password = $("#password").val();
-        $.post("<?php echo U('Index/index');?>",{'username':username,'password':password},function(res){
-                if(res['status'] == 0)
-                {
-                    alert(res['info']);
-                }else
-                {
-                    alert(res['info']);
-                }
-        });
-    });
-</script>
