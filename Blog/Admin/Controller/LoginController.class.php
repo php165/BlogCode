@@ -21,18 +21,18 @@ class LoginController extends Controller {
 		
 	//执行登陆
 	public function login(){
-      // var_dump($_POST);
+      var_dump($_POST);
       // 验证验证码
       $Verify = new \Think\Verify();
       $res = $Verify->check($_POST['code']);
       if($res){
       	//验证账号
-      	$mod = M("vip");
-      	$user = $mod -> where('vip_name="'.$_POST['vip_name'].'"')->find();
+      	$mod = M("user");
+      	$user = $mod -> where('user="'.$_POST['user'].'"')->find();
       	// dump($user);exit;
       	if($user){
       		//验证密码
-      		if(md5($_POST['password'])==$user['password']){
+      		if(md5(md5($_POST['password'],ture))==$user['password']){
                //用户信息存储到session中
                // 
       			session('user',$user);

@@ -1,12 +1,12 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+﻿
 <!-- saved from url=(0064)http://www.17sucai.com/preview/137615/2015-01-15/demo/index.html -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
-xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+<!DOCTYPE html >
+<HTML><HEAD><META content="IE=11.0000" 
 http-equiv="X-UA-Compatible">
  
 <META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 <TITLE>登录页面</TITLE> 
-<SCRIPT src="__PUBLIC__/Admin/js/jquery-1.9.1.min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="__PUBLIC__/js/jquery-1.9.1.min.js" type="text/javascript"></SCRIPT>
  
 <STYLE>
 body{
@@ -40,7 +40,7 @@ body{
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
 }
 .u_logo{
-	background: url("__PUBLIC__/Admin/images/username.png") no-repeat;
+	background: url("__PUBLIC__/image/username.png") no-repeat;
 	padding: 10px 10px;
 	position: absolute;
 	top: 43px;
@@ -48,7 +48,7 @@ body{
 
 }
 .p_logo{
-	background: url("__PUBLIC__/Admin/images/password.png") no-repeat;
+	background: url("__PUBLIC__/image/password.png") no-repeat;
 	padding: 10px 10px;
 	position: absolute;
 	top: 12px;
@@ -58,7 +58,7 @@ a{
 	text-decoration: none;
 }
 .tou{
-	background: url("__PUBLIC__/Admin/images/tou.png") no-repeat;
+	background: url("__PUBLIC__/image/tou.png") no-repeat;
 	width: 97px;
 	height: 92px;
 	position: absolute;
@@ -66,7 +66,7 @@ a{
 	left: 140px;
 }
 .left_hand{
-	background: url("__PUBLIC__/Admin/images/left_hand.png") no-repeat;
+	background: url("__PUBLIC__/image/left_hand.png") no-repeat;
 	width: 32px;
 	height: 37px;
 	position: absolute;
@@ -74,7 +74,7 @@ a{
 	left: 150px;
 }
 .right_hand{
-	background: url("__PUBLIC__/Admin/images/right_hand.png") no-repeat;
+	background: url("__PUBLIC__/image/right_hand.png") no-repeat;
 	width: 32px;
 	height: 37px;
 	position: absolute;
@@ -82,7 +82,7 @@ a{
 	right: -64px;
 }
 .initial_left_hand{
-	background: url("__PUBLIC__/Admin/images/hand.png") no-repeat;
+	background: url("__PUBLIC__/image/hand.png") no-repeat;
 	width: 30px;
 	height: 20px;
 	position: absolute;
@@ -90,7 +90,7 @@ a{
 	left: 100px;
 }
 .initial_right_hand{
-	background: url("__PUBLIC__/Admin/images/hand.png") no-repeat;
+	background: url("__PUBLIC__/image/hand.png") no-repeat;
 	width: 30px;
 	height: 20px;
 	position: absolute;
@@ -98,7 +98,7 @@ a{
 	right: -112px;
 }
 .left_handing{
-	background: url("__PUBLIC__/Admin/images/left-handing.png") no-repeat;
+	background: url("__PUBLIC__/image/left-handing.png") no-repeat;
 	width: 30px;
 	height: 20px;
 	position: absolute;
@@ -106,7 +106,7 @@ a{
 	left: 139px;
 }
 .right_handinging{
-	background: url("__PUBLIC__/Admin/images/right_handing.png") no-repeat;
+	background: url("__PUBLIC__/image/right_handing.png") no-repeat;
 	width: 30px;
 	height: 20px;
 	position: absolute;
@@ -161,34 +161,33 @@ $(function(){
 </DIV>
 </DIV>
 <P style="padding: 30px 0px 10px; position: relative;">
-    <SPAN 
-class="u_logo"></SPAN>
+    <span class="u_logo"></span>
 <form action="{:U('Admin/Login/login')}" method="post" >
-    <INPUT class="ipt" name = "vip_name"type="text" placeholder="请输入用户名" value=""> 
+    <input class="ipt" name = "user" type="text" placeholder="用户名" value=""> 
         </P>
-    <P style="position: relative;"><SPAN class="p_logo"></SPAN>         
-    <INPUT class="ipt" id="password" type="password" name="password" placeholder="请输入密码" value="">   
+    <P style="position: relative;"><span class="p_logo"></span>         
+    <input class="ipt" id="password" type="password" name="password" placeholder="密码" value="">   
       </P>
-      <P style="position: relative;"><SPAN class="p_logo"></SPAN>         
-    <INPUT class="ipt" id="code" type="text" name="code"  placeholder="请输入验证码" value="">
+      <P style="position: relative;"><span class="p_logo"></span>         
+    <input class="ipt" id="code" type="text" name="code"  placeholder="验证码" value="">
        <span><img onclick='this.src=this.src+"?id="+Math.random()'; src="__URL__/code" width="100px"  alt=""></span>
       </P>
       <!-- <P style="position: relative;"><SPAN class="p_logo"></SPAN>         
     		<img src="__URL__/code" width="100px" alt="">   
       </P> -->
-    <DIV style="height: 50px; line-height: 50px; margin-top: 30px; border-top-color: rgb(231, 231, 231); border-top-width: 1px; border-top-style: solid;">
-    <P style="margin: 0px 35px 20px 45px;"><SPAN style="float: left;"><A style="color: rgb(204, 204, 204);" 
-    href="#">忘记密码?</A></SPAN> 
-               <SPAN style="float: right;"><!-- <A style="color: rgb(204, 204, 204); margin-right: 10px;" 
+    <div style="height: 50px; line-height: 50px; margin-top: 30px; border-top-color: rgb(231, 231, 231); border-top-width: 1px; border-top-style: solid;">
+    <P style="margin: 0px 35px 20px 45px;"><span style="float: left;"><A style="color: rgb(204, 204, 204);" 
+    href="#">忘记密码?</A></span> 
+               <span style="float: right;"><!-- <A style="color: rgb(204, 204, 204); margin-right: 10px;" 
     href="#">注册</A> -->  
                   <!-- <A style="background: rgb(0, 142, 173); padding: 7px 10px; border-radius: 4px; border: 1px solid rgb(26, 117, 152); border-image: none; color: rgb(255, 255, 255); font-weight: bold;" 
     href="__APP__/Index/login">登录</A> --> 
     <input type="submit" value="登陆" style="background: rgb(0, 142, 173); padding: 7px 10px; border-radius: 4px; border: 1px solid rgb(26, 117, 152); border-image: none; color: rgb(255, 255, 255); font-weight: bold;"/>
-<form/>
-           </SPAN>         
+</form>
+           </span>         
            </P>
-           </DIV>
-           </DIV>
+           </div>
+           </div>
 		   <div style="text-align:center;">
 <!-- <p>来源:<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p> -->
 </div>
